@@ -1,4 +1,6 @@
-# projetoTCC
-sistemaDeEstacionamentoPago
+# Sistema de estacionamento
+Desenvolvido até o momento no 7º semestre Info 2019
 
-O sistema de estacionamento facilitará e otimizará a distribuição de vagas e seus serviços com a máxima eficácia.
+Tecnologias
+Netbeans, Postgresql
+
