@@ -10,7 +10,7 @@ Netbeans, Postgresql
 Documentação:
 A documentação está na pasta "Documentação" no repositório
 
-Protótipo
+Protótipo:
 https://www.quant-ux.com/test.html?h=a2aa10aEzF8nA7dzaFipVOAWcex7OK2qxAzxeYXZHC4JBxOIaZ2cQx9si0pa
 
 Estagio atual:
