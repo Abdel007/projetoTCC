@@ -2,6 +2,15 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="EstacionamentosPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>Modelo.Lavagem</class>
+    <class>Modelo.LocacaoTempo</class>
+    <class>Modelo.Mensalista</class>
+    <class>Modelo.Pagamento</class>
+    <class>Modelo.TabelaPreco</class>
+    <class>Modelo.Vaga</class>
+    <class>Modelo.Admin</class>
+    <class>Modelo.Historico</class>
+    <class>Modelo.VwCaixa</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/TCCeuimploro"/>

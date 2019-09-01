@@ -59,6 +59,11 @@
   box-sizing: border-box;
 }
 
+.radio-form{
+    position: relative;
+    top:15px;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -3488,6 +3493,7 @@ input[type="button"].btn-block {
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  margin:3px;
 }
 
 .custom-control {

@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@include file="../cabecalho.jsp" %>
 <main class="main">
     <!-- Breadcrumb-->
@@ -64,6 +65,16 @@
                             <span class="input-group-text">Hora entrega</span>
                           </div>
                           <input type="time" required name="txtHoraEntrega" class="form-control">
+                         
+                        </div>
+                      </div>
+                          
+                          <div class="form-group">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">Data lavagem</span>
+                          </div>
+                          <input type="date"  name="txtDataLavagem" required class="form-control">
                          
                         </div>
                       </div>

@@ -22,7 +22,7 @@ import javax.persistence.Temporal;
  */
 @Entity
 @NamedQueries({
-    @NamedQuery(name = "LocacaoTempo.findAll", query = "SELECT lt FROM LocacaoTempo lt"),
+    @NamedQuery(name = "LocacaoTempo.findAll", query = "SELECT lt FROM LocacaoTempo lt ORDER BY lt.diaInicio DESC"),
     @NamedQuery(name = "LocacaoTempo.findFilter", query = "select lt from LocacaoTempo lt" +
             " where UPPER(lt.placaCarro) like :filtro")
 })

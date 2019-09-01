@@ -18,6 +18,7 @@
                   </div>
                   <div class="card-body">
                       <form action="VagaWS" method="post">
+                          
                        <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
@@ -37,6 +38,7 @@
                          
                         </div>
                       </div>
+                          
                       <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">

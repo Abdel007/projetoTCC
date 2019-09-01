@@ -48,10 +48,10 @@ public class PagamentoWS extends HttpServlet {
         String id;
         switch (String.valueOf(acao)) {
             
-            case "levarPagamentos":
-                request.setAttribute("pagamentos", this.listaPag());
-                pagina = "controleCaixa.jsp";
-                break;
+//            case "levarPagamentos":
+//                request.setAttribute("pagamentos", this.listaPag());
+//                pagina = "controleCaixa.jsp";
+//                break;
             
             case "add":
                 request.setAttribute("mensalista", this.listaMensalista());

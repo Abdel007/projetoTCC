@@ -24,9 +24,10 @@ import javax.persistence.Temporal;
  */
 @Entity
 @NamedQueries({
-    @NamedQuery(name = "Lavagem.findAll", query = "SELECT l FROM Lavagem l"),
+    @NamedQuery(name = "Lavagem.findAll", query = "SELECT l FROM Lavagem l ORDER BY l.dataLavagem DESC"),
     @NamedQuery(name = "Lavagem.findFilter", query = "select l from Lavagem l" +
-            " where UPPER(l.nome) like :filtro")
+            " where UPPER(l.nome) like :filtro"),
+    @NamedQuery(name = "Lavagem.findByDataLavagem", query = "SELECT l FROM Lavagem l WHERE l.dataLavagem = false ORDER BY l.dataLavagem DESC")
 })
 public class Lavagem implements Serializable {
     
@@ -42,7 +43,8 @@ public class Lavagem implements Serializable {
     private double precoLavagem;
     @Temporal(javax.persistence.TemporalType.TIME)
     private Date horaEntrega;
-    
+    @Temporal(javax.persistence.TemporalType.DATE)
+    private Date dataLavagem;
 
     public Long getId() {
         return id;
@@ -115,6 +117,14 @@ public class Lavagem implements Serializable {
 
     public void setPlaca(String placa) {
         this.placa = placa;
+    }
+
+    public Date getDataLavagem() {
+        return dataLavagem;
+    }
+
+    public void setDataLavagem(Date dataLavagem) {
+        this.dataLavagem = dataLavagem;
     }
 
    

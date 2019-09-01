@@ -11,7 +11,7 @@
     </ol>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-9">
                 <div class="card">
                     <div class="card-header">
 
@@ -19,15 +19,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <h1>Vagas</h1>
-                                    <div class="input-group">
-                                        <span class="input-group-prepend">
-                                            <button type="submit" class="btn btn-primary">
-                                                <i class="fa fa-search"></i> &nbsp;</button>
-                                        </span>
-                                        <input type="selct" name="txtFiltro" id="input1-group2" class="form-control" placeholder="Digite 'Não' Para listar vagas disponiveis ">
-                                        <!--Indica pro servlet que a ação é um filtro -->
-                                        <input type="hidden" name="acao" value="filter"/>
-                                    </div>
+                                    
                                 </div> 
                             </div>
                             
@@ -36,7 +28,7 @@
                     </div>
                     <div class="row col-lg-12">
                         <a href="add.jsp" class="btn btn-pill btn-primary"style="margin: 20px 0px 0px 20px"> 
-                            <i class="fa fa-plus"></i>
+                            <i class="fa fa-plus"> Adicionar</i>
                         </a>
                     </div>
                     <div class="card-body">
@@ -45,8 +37,8 @@
                                 <tr>
 
                                     <th>Numero da vaga</th>
-                                    <th>Ocupada</th>
-                                    <th>Coberta</th>
+                                    <th>Ocupada?</th>
+                                    <th>Coberta?</th>
                                     <th>Ações</th>
                                 </tr>
                             </thead>

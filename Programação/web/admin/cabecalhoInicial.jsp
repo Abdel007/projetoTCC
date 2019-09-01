@@ -22,7 +22,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="../tabelaPreco/TabelaPrecoWS">
-        <img class="navbar-brand-full" src="../../img/logo.png" width="89" height="70" alt="">
+        <img class="navbar-brand-full" src="../../img/Logo5.png" width="150" height="60" alt="">
         <img class="navbar-brand-minimized" src="../img/brand/sygnet.svg" width="30" height="30" alt="">
       </a>
       <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
@@ -66,7 +66,7 @@
             </li>
             
             <li class="nav-item ">
-              <a class="nav-link" href="../pagamento/PagamentoWS?acao=levarPagamentos">
+              <a class="nav-link" href="../caixa/CaixaWS">
                 <i class="nav-icon icon-cursor"></i> Controle do caixa
               </a>
               

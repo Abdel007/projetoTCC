@@ -4,41 +4,32 @@
 <main class="main">
     <!-- Breadcrumb-->
     <ol class="breadcrumb">
-        <li class="breadcrumb-item">Lavagem</li>
-        <li class="breadcrumb-item">
-            <a href="LavagemWS">Listar</a>
-        </li>
-
+        <form action="LavagemWS" method="get" class="form-horizontal">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <span class="input-group-prepend">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa fa-search"></i> &nbsp;</button>
+                        </span>
+                        <input type="text" name="txtFiltro" id="input1-group2" class="form-control" placeholder="Pesquise pelo nome">
+                        <!--Indica pro servlet que a ação é um filtro -->
+                        <input type="hidden" name="acao" value="filter"/>
+                    </div>
+                </div>
+            </div>
+        </form>
     </ol>
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header">
-
-                        <form action="LavagemWS" method="get" class="form-horizontal">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h1>Lavagem</h1>
-                                    <div class="input-group">
-                                        <span class="input-group-prepend">
-                                            <button type="submit" class="btn btn-primary">
-                                                <i class="fa fa-search"></i> &nbsp;</button>
-                                        </span>
-                                        <input type="text" name="txtFiltro" id="input1-group2" class="form-control" placeholder="Pesquise pelo nome do cliente">
-                                        <!--Indica pro servlet que a ação é um filtro -->
-                                        <input type="hidden" name="acao" value="filter"/>
-                                    </div>
-
-                                    
-
-                                </div>
-                            </div>
-                        </form>
+                        <h1>Lavagens</h1>
                     </div>
                     <div class="row col-lg-12">
                         <a href="add.jsp" class="btn btn-pill btn-primary"style="margin: 20px 0px 0px 20px"> 
-                            <i class="fa fa-plus"></i>
+                            <i class="fa fa-plus"> Adicionar</i>
                         </a>
                         </a>
                     </div>
@@ -52,7 +43,7 @@
                                     <th>Tipo de lavagem</th>
                                     <th>Preço da lavagem</th>
                                     <th>Hora entrega</th>
-
+                                    <th>Data lavagem</th>
                                     <th>Ações</th>
                                 </tr>
                             </thead>
@@ -63,9 +54,10 @@
                                         <td>${obj.nome}</td>
                                         <td>${obj.placa}</td>
                                         <td>${obj.tipoLavagem}</td>
-                                        <td>${obj.precoLavagem} R$</td>
+                                        <fmt:setLocale value="pt-BR"/>
+                                        <td><fmt:formatNumber value="${obj.precoLavagem}" minFractionDigits="2" type="currency"/></td>
                                         <td><fmt:formatDate pattern="HH:mm'h'" value="${obj.horaEntrega}"></fmt:formatDate></td> 
-
+                                        <td><fmt:formatDate pattern="dd/MM/yyyy" value="${obj.dataLavagem}"></fmt:formatDate></td>
                                             <td>
                                                 <a href="LavagemWS?acao=edit&id=${obj.id}" class="btn btn-pill btn-success btn-sm" title="alterar"> 
                                                 <i class="fa fa-edit"></i>

@@ -7,7 +7,7 @@
             <a href="PagamentoWS">Listar</a>
         </li>
         <li class="breadcrumb-item">
-            <a href="add.jsp">Cadastrar</a>
+            <a href="PagamentoWS?acao=add">Cadastrar</a>
         </li>
 
     </ol>

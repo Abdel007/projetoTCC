@@ -81,7 +81,7 @@
                           
                       </div>
                     
-                    </br>
+                    <br>
                           
                           <div class="form-group">
                         <div class="input-group">
@@ -106,6 +106,7 @@
                           <input type="text"  name="txtObservacoes" required class="form-control">
                           </div>
                               </div>
+                    
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
@@ -135,14 +136,16 @@
                          
                         </div>
                       </div>
-                         
-                        
-                      </div>
-                      
-                      <div class="form-group form-actions">
+                    
+                    <div class="form-group form-actions">
                         <button type="submit" class="btn btn-sm btn-primary">Enviar</button>
                       </div>
-                    </form>
+                         
+                        </form>
+                      </div>
+                      
+                      
+                    
                   </div>
                 </div>
               </div>

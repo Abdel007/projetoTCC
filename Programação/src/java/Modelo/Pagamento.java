@@ -24,11 +24,11 @@ import javax.persistence.Temporal;
  */
 @Entity
 @NamedQueries({
-    @NamedQuery(name = "Pagamento.findAll", query = "SELECT p FROM Pagamento p"),
+    @NamedQuery(name = "Pagamento.findAll", query = "SELECT p FROM Pagamento p ORDER BY p.dataPagamento DESC"),
     @NamedQuery(name = "Pagamento.findFilter", query = "select p from Pagamento p" +
             " where UPPER(p.mensalista.nome) like :filtro"),
     @NamedQuery(name = "Pagamento.findPagamento", query = "select p from Pagamento p" +
-            " where p.mensalista.id = :filtro")
+            " where p.mensalista.id = :filtro ORDER BY p.dataPagamento DESC")
            
         
 })

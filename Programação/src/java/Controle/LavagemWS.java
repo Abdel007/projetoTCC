@@ -123,6 +123,11 @@ public class LavagemWS extends HttpServlet {
             //se veio com a chave primaria então tem q alterar
             if (request.getParameter("txtId") != null) {
                 obj = dao.buscarPorChavePrimaria(Long.parseLong(request.getParameter("txtId")));
+                
+                String dia = request.getParameter("txtDataLavagem");
+                Date dd = FormataData.formata(dia,"yyyy-MM-dd");
+                obj.setDataLavagem(dd);
+                
                 obj.setNome(request.getParameter("txtNome"));
                 obj.setPlaca(request.getParameter("txtPlaca"));
                 obj.setTipoLavagem(request.getParameter("txtTipoLavagem"));
@@ -136,6 +141,10 @@ public class LavagemWS extends HttpServlet {
                 
                 pagina = "edita-ok.jsp";
             } else {
+                String diaa = request.getParameter("txtDataLavagem");
+                Date ddd = FormataData.formata(diaa,"yyyy-MM-dd");
+                obj.setDataLavagem(ddd);
+                
                 obj.setNome(request.getParameter("txtNome"));
                 obj.setPlaca(request.getParameter("txtPlaca"));
                 obj.setTipoLavagem(request.getParameter("txtTipoLavagem"));

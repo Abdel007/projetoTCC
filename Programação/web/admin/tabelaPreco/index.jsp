@@ -11,7 +11,7 @@
     </ol>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-8">
                 <div class="card">
                     <div class="card-header">
 
@@ -28,9 +28,9 @@
                             </div>
                         </form>
                     </div>
-                    <div class="row col-lg-12">
-                        <a href="add.jsp" class="btn btn-pill btn-primary"style="margin: 20px 0px 0px 20px"> 
-                            <i class="fa fa-plus"></i>
+                    <div class="row col-lg-18">
+                        <a href="add.jsp" class="btn btn-pill btn-primary"style="margin: 20px 0px 0px 35px"> 
+                            <i class="fa fa-plus"> Adicionar</i>
                         </a>
                     </div>
                     <div class="card-body">
@@ -38,7 +38,7 @@
                             <thead>
                                 <tr>
 
-                                    <th>Opçao</th>
+                                    <th>Opção</th>
                                     <th>Valor</th>
                                     <th>Ações</th>
                                 </tr>

@@ -98,7 +98,15 @@ public class MensalistaWS extends HttpServlet {
                 } else {
                     request.setAttribute("msg", "Identificador não informado");
                 }
+                
                 pagina = "pagamentos.jsp";
+                break;
+                
+            case "vermais":
+                dao = new MensalistaDAO();
+                Mensalista m = dao.buscarPorChavePrimaria(Long.parseLong(request.getParameter("id")));
+                pagina = "vermais.jsp";
+                request.setAttribute("obj", m);
                 break;
 
             default:

@@ -53,7 +53,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Dia inicio</span>
+                            <span class="input-group-text">Dia início</span>
                           </div>
                           <input type="date" required value='<fmt:formatDate pattern="yyyy-MM-dd" value="${obj.diaInicio}"></fmt:formatDate>' name="txtDiaInicio" class="form-control">
                          
@@ -63,7 +63,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Hora inicio</span>
+                            <span class="input-group-text">Hora início</span>
                           </div>
                           <input type="time" required value='<fmt:formatDate pattern="HH:mm" value="${obj.horaInicio}"></fmt:formatDate>' name="txtHoraInicio" class="form-control">
                          

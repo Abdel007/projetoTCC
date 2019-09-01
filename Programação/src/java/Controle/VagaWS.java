@@ -95,7 +95,7 @@ public class VagaWS extends HttpServlet {
                 dao = new VagaDAO();
                 if (request.getParameter("filtro") != null) {
                     try {
-                        Collections.sort(lista, Collections.reverseOrder());
+                        
                         lista = dao.listar(request.getParameter("filtro"));
                     } catch (Exception ex) {
                         Logger.getLogger(VagaWS.class.getName()).log(Level.SEVERE, null, ex);

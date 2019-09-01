@@ -12,7 +12,7 @@
     </ol>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-8">
                 <div class="card">
                     <div class="card-header">
 
@@ -29,8 +29,8 @@
 
                     <div>
                         </br>
-                        <h5> <div style="margin: 0px 0px 0px 20px"> Mensalista selecionado:  ${mensalista.nome} </div></h5 >
-                        
+                        <h5> <div style="margin: 0px 0px 0px 20px"> Mensalista selecionado(a):  <FONT COLOR="#20a8d8">${mensalista.nome}</FONT> </div></h5 >
+
 
                     </div>
 
@@ -39,7 +39,7 @@
                             <thead>
                                 <tr>
 
-                                    
+
                                     <th>Dia/Mês pago</th>
                                     <th>Data Pagamento</th>
                                     <th>Valor</th>
@@ -49,16 +49,12 @@
                             <tbody>
                                 <c:forEach items="${msg}" var="obj">
                                     <tr>
-
-                                        
                                         <td>${obj.mesAno}</td>
-                                        <td><fmt:formatDate pattern="yyyy-MM-dd" value="${obj.dataPagamento}"></fmt:formatDate></td>
-                                        <td>${obj.valor} R$</td>
-                                <td>
-
-                                </td>
-                                </tr>
-                            </c:forEach>
+                                        <td><fmt:formatDate pattern="dd/MM/yyyy" value="${obj.dataPagamento}"></fmt:formatDate></td>
+                                        <fmt:setLocale value="pt-BR"/>
+                                        <td><fmt:formatNumber value="${obj.valor}" minFractionDigits="2" type="currency"/></td>
+                                    </tr>
+                                </c:forEach>
                             </tbody>
 
                         </table>

@@ -37,7 +37,10 @@
                       </div>
                           
                           
-                      </div> 
+                      </div>
+                    
+                    <br>
+                    
                     <div class="input-group">
                           <div class="input-group-prepend">
                             <span class="input-group-text">Coberta?</span>
@@ -49,7 +52,7 @@
                         </div>
                       </div> 
                     
-                    
+                    <br>
                       <div class="form-group form-actions">
                         <button type="submit" class="btn btn-sm btn-primary">Enviar</button>
                       </div>

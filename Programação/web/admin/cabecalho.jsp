@@ -22,7 +22,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="../tabelaPreco/TabelaPrecoWS">
-        <img class="navbar-brand-full" src="../../img/logo.png" width="89" height="70" alt="">
+        <img class="navbar-brand-full" src="../../img/Logo5.png" width="150" height="60" alt="">
         <img class="navbar-brand-minimized" href="../tabelaPreco/TabelaPrecoWS" src="../../img/brand/sygnet.svg" width="30" height="30" alt="">
       </a>
       <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
@@ -53,20 +53,7 @@
               
             <li class="nav-item ">
               <a class="nav-link" href="../mensalista/MensalistaWS">
-                <i class="nav-icon icon-cursor"></i> Mensalista
-              </a>
-              
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link" href="../locacaoTempo/LocacaoTempoWS">
-                <i class="nav-icon icon-cursor"></i> Locar por tempo
-              </a>
-              
-            </li>
-            
-            <li class="nav-item ">
-              <a class="nav-link" href="../lavagem/LavagemWS">
-                <i class="nav-icon icon-cursor"></i> Lavagem
+                <i class="nav-icon icon-cursor"></i> Mensalistas
               </a>
               
             </li>
@@ -79,8 +66,24 @@
             </li>
             
             <li class="nav-item ">
+              <a class="nav-link" href="../locacaoTempo/LocacaoTempoWS">
+                <i class="nav-icon icon-cursor"></i> Locações por tempo
+              </a>
+              
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="../lavagem/LavagemWS">
+                <i class="nav-icon icon-cursor"></i> Lavagens
+              </a>
+              
+            </li>
+            
+            
+            
+            <li class="nav-item ">
               <a class="nav-link" href="../vaga/VagaWS">
-                <i class="nav-icon icon-cursor"></i> Vaga
+                <i class="nav-icon icon-cursor"></i> Vagas
               </a>
               
             </li>
