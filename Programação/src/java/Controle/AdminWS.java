@@ -70,7 +70,7 @@ public class AdminWS extends HttpServlet {
                 break;
             case "sair":
                 request.getSession().setAttribute("admin", new Admin());
-                request.setAttribute("msg", "Você se deslogou com sucesso!");
+                request.setAttribute("msg", "Deslogado com sucesso!");
                 pagina = "../login/login.jsp";
                 break;
             default:

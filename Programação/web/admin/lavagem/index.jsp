@@ -39,11 +39,11 @@
                                 <tr>
 
                                     <th>Nome</th>
-                                    <th>Placa</th>
-                                    <th>Tipo de lavagem</th>
-                                    <th>Preço da lavagem</th>
-                                    <th>Hora entrega</th>
-                                    <th>Data lavagem</th>
+                                    <th>Placa Carro</th>
+                                    <th>Tipo Lavagem</th>
+                                    <th>Preço Lavagem</th>
+                                    <th>Hora Entrega</th>
+                                    <th>Data Lavagem</th>
                                     <th>Ações</th>
                                 </tr>
                             </thead>

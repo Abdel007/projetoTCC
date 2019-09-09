@@ -32,7 +32,7 @@
                       <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Numero vaga</span>
+                            <span class="input-group-text">Numero Vaga</span>
                           </div>
                           <input type="text" value="${obj.numVaga}" name="txtNumVaga" required class="form-control">
                          

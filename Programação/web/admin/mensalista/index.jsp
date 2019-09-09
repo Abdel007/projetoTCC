@@ -42,7 +42,7 @@
                                     <th>Nome</th>
                                     <th>Vaga</th>
                                     <th>Ativo?</th>
-                                    <th>Placa carro</th>
+                                    <th>Placa Carro</th>
                                     <th>Pagamentos</th>
                                     <th>Informações</th>
                                     <th>Ações</th>

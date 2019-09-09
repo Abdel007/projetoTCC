@@ -32,7 +32,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Placa</span>
+                            <span class="input-group-text">Placa Carro</span>
                           </div>
                           <input type="text"  name="txtPlaca" required class="form-control">
                          
@@ -42,7 +42,7 @@
                       <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Tipo de lavagem</span>
+                            <span class="input-group-text">Tipo Lavagem</span>
                           </div>
                           <input type="text" required name="txtTipoLavagem" class="form-control">
                          
@@ -52,7 +52,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Valor da lavagem</span>
+                            <span class="input-group-text">Valor Lavagem</span>
                           </div>
                           <input type="text" required name="txtPrecoLavagem" class="form-control">
                          
@@ -62,7 +62,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Hora entrega</span>
+                            <span class="input-group-text">Hora Entrega</span>
                           </div>
                           <input type="time" required name="txtHoraEntrega" class="form-control">
                          
@@ -72,7 +72,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Data lavagem</span>
+                            <span class="input-group-text">Data Lavagem</span>
                           </div>
                           <input type="date"  name="txtDataLavagem" required class="form-control">
                          

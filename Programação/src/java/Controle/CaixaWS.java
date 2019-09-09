@@ -10,6 +10,10 @@ import static com.sun.corba.se.spi.presentation.rmi.StubAdapter.request;
 import dao.CaixaDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Calendar;
+import static java.util.Calendar.DAY_OF_MONTH;
+import static java.util.Calendar.MONTH;
+import static java.util.Calendar.YEAR;
 import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
@@ -38,8 +42,19 @@ public class CaixaWS extends HttpServlet {
             throws ServletException, IOException {
         
         pagina = "controleCaixa.jsp";
-//        List<VwCaixa> lista = this.listarTodosTiposMes();
-//        request.setAttribute("lista", lista);
+        
+        Calendar cal = Calendar.getInstance();
+        String primeirodia,ultimodia;
+        primeirodia = String.valueOf(cal.get(YEAR)) + "-"+String.valueOf(cal.get(MONTH)+1) + "-01"  ;
+        ultimodia = String.valueOf(cal.get(YEAR)) + "-"+String.valueOf(cal.get(MONTH)+1) + "-" + cal.getMaximum(DAY_OF_MONTH);
+        
+        Date data1 = FormataData.formata(primeirodia,"yyyy-MM-dd");
+        Date data2 = FormataData.formata(ultimodia,"yyyy-MM-dd");
+        
+        List<VwCaixa> lista = this.listarTodosTipos(data1, data2);
+        Double valor = this.listarSomaTodosTipos(data1, data2);
+        request.setAttribute("valor", valor);
+        request.setAttribute("lista", lista);
         
         RequestDispatcher destino;
         destino = request.getRequestDispatcher(pagina);
@@ -78,13 +93,13 @@ public class CaixaWS extends HttpServlet {
         return valor;
     }
      
-    public List<VwCaixa> listarTodosTiposMes()  {
-        List<VwCaixa> lista;
-        CaixaDAO novadao = new CaixaDAO();
-        lista = novadao.listarTodosTiposMes();
-        novadao.fecharConexao();
-        return lista;
-    }
+//    public List<VwCaixa> listarTodosTiposMes()  {
+//        List<VwCaixa> lista;
+//        CaixaDAO novadao = new CaixaDAO();
+//        lista = novadao.listarTodosTiposMes();
+//        novadao.fecharConexao();
+//        return lista;
+//    }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

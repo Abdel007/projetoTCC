@@ -73,7 +73,7 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text">Valor mensal</span>
+                                            <span class="input-group-text">Valor Mensal</span>
                                         </div>
                                         <input type="text" value="${obj.valorMensal}" name="txtValorMensal" required class="form-control">
 
@@ -121,7 +121,7 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text">Modelo carro</span>
+                                            <span class="input-group-text">Modelo Carro</span>
                                         </div>
                                         <input type="text" value="${obj.modeloCarro}" name="txtModeloCarro" required class="form-control">
 
@@ -131,7 +131,7 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text">Cor carro</span>
+                                            <span class="input-group-text">Cor Carro</span>
                                         </div>
                                         <input type="text" value="${obj.corCarro}" required name="txtCorCarro" class="form-control">
 
@@ -141,7 +141,7 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text">Placa carro</span>
+                                            <span class="input-group-text">Placa Carro</span>
                                         </div>
                                         <input type="text" value="${obj.placaCarro}" required name="txtPlacaCarro" class="form-control">
 

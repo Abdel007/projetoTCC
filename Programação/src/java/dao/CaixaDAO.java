@@ -15,6 +15,7 @@ import static java.util.Calendar.MONTH;
 import static java.util.Calendar.YEAR;
 import java.util.List;
 import javax.persistence.TemporalType;
+import util.FormataData;
 
 /**
  *
@@ -56,16 +57,17 @@ public class CaixaDAO extends GenericDAO<VwCaixa, Long> {
                 .getSingleResult().toString());
     }
     
-    public List<VwCaixa> listarTodosTiposMes() {
-        Calendar cal = Calendar.getInstance();
-        String primeirodia,ultimodia;
-        primeirodia = String.valueOf(cal.get(YEAR)) + "-"+String.valueOf(cal.get(MONTH)+1) + "-01"  ;
-        ultimodia = String.valueOf(cal.get(YEAR)) + "-"+String.valueOf(cal.get(MONTH)+1) + "-" + cal.getMaximum(DAY_OF_MONTH);
-        
-        
-        
-        return this.listarTodosTipos(data1, data2);
-    }
+//    public List<VwCaixa> listarTodosTiposMes() {
+//        Calendar cal = Calendar.getInstance();
+//        String primeirodia,ultimodia;
+//        primeirodia = String.valueOf(cal.get(YEAR)) + "-"+String.valueOf(cal.get(MONTH)+1) + "-01"  ;
+//        ultimodia = String.valueOf(cal.get(YEAR)) + "-"+String.valueOf(cal.get(MONTH)+1) + "-" + cal.getMaximum(DAY_OF_MONTH);
+//        
+//        Date data1 = FormataData.formata(primeirodia,"yyyy-MM-dd");
+//        Date data2 = FormataData.formata(ultimodia,"yyyy-MM-dd");
+//        
+//        return this.listarTodosTipos(data1, data2);
+//    }
 
     public VwCaixa buscarPorChavePrimaria(Integer chaveprimaria) {
         return em.find(VwCaixa.class, chaveprimaria);

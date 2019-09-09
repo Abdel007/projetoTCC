@@ -21,7 +21,7 @@
                       <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Número vaga</span>
+                            <span class="input-group-text">Número Vaga</span>
                           </div>
                           <input type="number"  name="txtNumVaga" required class="form-control">
                          

@@ -36,7 +36,7 @@
                             <thead>
                                 <tr>
 
-                                    <th>Numero da vaga</th>
+                                    <th>Número Vaga</th>
                                     <th>Ocupada?</th>
                                     <th>Coberta?</th>
                                     <th>Ações</th>

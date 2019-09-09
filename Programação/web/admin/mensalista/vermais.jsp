@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@include file="../cabecalho.jsp" %>
 <main class="main">
     <!-- Breadcrumb-->
@@ -38,8 +39,8 @@
                                 <tr>
                                     <th>CPF</th>
                                     <th>Telefone</th>
-                                    <th>Modelo carro</th>
-                                    <th>Cor carro</th>
+                                    <th>Modelo Carro</th>
+                                    <th>Cor Carro</th>
                                     <th>Valor Mensal</th>
                                     <th>Observações</th>
                                 </tr>
@@ -51,7 +52,8 @@
                                 <td>${obj.telefone}</td>
                                 <td>${obj.modeloCarro}</td>
                                 <td>${obj.corCarro}</td>
-                                <td>${obj.valorMensal} R$</td>
+                                <fmt:setLocale value="pt-BR"/>
+                                <td><fmt:formatNumber value="${obj.valorMensal}" minFractionDigits="2" type="currency"/></td>
                                 <td>${obj.observacoes}</td>
                                 <td>
 

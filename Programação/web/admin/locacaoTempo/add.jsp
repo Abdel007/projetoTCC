@@ -33,7 +33,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Placa carro</span>
+                            <span class="input-group-text">Placa Carro</span>
                           </div>
                           <input type="text"  name="txtPlacaCarro" required class="form-control">
                          
@@ -43,7 +43,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Dia início</span>
+                            <span class="input-group-text">Dia Início</span>
                           </div>
                           <input type="date"  name="txtDiaInicio" required class="form-control">
                          
@@ -53,7 +53,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Hora início</span>
+                            <span class="input-group-text">Hora Início</span>
                           </div>
                           <input type="time"  name="txtHoraInicio" required class="form-control">
                          
@@ -63,7 +63,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Dia termino</span>
+                            <span class="input-group-text">Dia Termino</span>
                           </div>
                           <input type="date"  name="txtDiaTermino" required class="form-control">
                          
@@ -73,7 +73,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Hora termino</span>
+                            <span class="input-group-text">Hora Termino</span>
                           </div>
                           <input type="time"  name="txtHoraTermino" required class="form-control">
                          

@@ -37,9 +37,9 @@
                       <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Mes/Ano pago</span>
+                            <span class="input-group-text">Período Estadia</span>
                           </div>
-                          <input type="text"  name="txtMesAno" required class="form-control">
+                          <input placeholder="ex: 15 fev - 15 mar" type="text"  name="txtMesAno" required class="form-control">
                          
                         </div>
                       </div>
@@ -47,7 +47,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Data pagamento</span>
+                            <span class="input-group-text">Data Pagamento</span>
                           </div>
                           <input type="date"  name="txtDataPagamento" required class="form-control">
                          

@@ -38,7 +38,7 @@
                                 <tr>
 
                                     <th>Mensalista</th>
-                                    <th>Periodo Estadia</th>
+                                    <th>Período Estadia</th>
                                     <th>Data Pagamento</th>
                                     <th>Valor</th>
                                     <th>Ações</th>

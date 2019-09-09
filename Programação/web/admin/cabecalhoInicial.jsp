@@ -50,17 +50,17 @@
               </a>
               
             </li>
-              
-            <li class="nav-item ">
-              <a class="nav-link" href="../vaga/VagaWS?acao=grafico">
-                <i class="nav-icon icon-cursor"></i> Ocupação do pátio
-              </a>
-              
-            </li>
             
             <li class="nav-item ">
               <a class="nav-link" href="../mensalista/MensalistaWS">
                 <i class="nav-icon icon-cursor"></i> Administrativo
+              </a>
+              
+            </li>
+              
+            <li class="nav-item ">
+              <a class="nav-link" href="../vaga/VagaWS?acao=grafico">
+                <i class="nav-icon icon-cursor"></i> Ocupação do pátio
               </a>
               
             </li>

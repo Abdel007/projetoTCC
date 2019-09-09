@@ -1,12 +1,11 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@include file="../cabecalhoInicial.jsp" %>
 <main class="main">
     <!-- Breadcrumb-->
     <ol class="breadcrumb">
-        <li class="breadcrumb-item">Tabela de preços</li>
-        <li class="breadcrumb-item">
-            <a href="TabelaPrecoWS">Listar</a>
-        </li>
+        
+        <h1> <div style="margin: 0px 0px 0px 350px"> <FONT COLOR="#20a8d8"> <b> BEM VINDO! </b></FONT> </div></h1>
 
     </ol>
     <div class="container-fluid">
@@ -48,7 +47,8 @@
                                     <tr>
 
                                         <td>${obj.opcoes}</td>
-                                        <td>${obj.valor} R$</td>
+                                        <fmt:setLocale value="pt-BR"/>
+                                        <td><fmt:formatNumber value="${obj.valor}" minFractionDigits="2" type="currency"/></td>
                                         <td>
                                             <a href="TabelaPrecoWS?acao=edit&id=${obj.id}" class="btn btn-pill btn-success btn-sm" title="alterar"> 
                                                 <i class="fa fa-edit"></i>

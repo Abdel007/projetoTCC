@@ -37,11 +37,11 @@
                             <thead>
                                 <tr>
                                     <th>Nome</th>
-                                    <th>Placa carro</th>
-                                    <th>Dia inicio</th>
-                                    <th>Hora inicio</th>
-                                    <th>Dia termino</th>
-                                    <th>Hora termino</th>
+                                    <th>Placa Carro</th>
+                                    <th>Dia Início</th>
+                                    <th>Hora Início</th>
+                                    <th>Dia Termino</th>
+                                    <th>Hora Termino</th>
                                     <th>Vaga</th>
                                     <th>Valor</th>
                                     <th>Ações</th>

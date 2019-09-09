@@ -42,7 +42,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Placa</span>
+                            <span class="input-group-text">Placa Carro</span>
                           </div>
                           <input type="text" required value="${obj.placa}" name="txtPlaca" class="form-control">
                          
@@ -52,7 +52,7 @@
                       <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Tipo de lavagem</span>
+                            <span class="input-group-text">Tipo Lavagem</span>
                           </div>
                           <input type="text" required value="${obj.tipoLavagem}" name="txtTipoLavagem" class="form-control">
                          
@@ -62,7 +62,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Preço da lavagem</span>
+                            <span class="input-group-text">Preço Lavagem</span>
                           </div>
                           <input type="text" required value="${obj.precoLavagem}" name="txtPrecoLavagem" class="form-control">
                          
@@ -72,7 +72,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Hora entrega</span>
+                            <span class="input-group-text">Hora Entrega</span>
                           </div>
                           <input type="time" required value='<fmt:formatDate pattern="HH:mm" value="${obj.horaEntrega}"></fmt:formatDate>' name="txtHoraEntrega" class="form-control">
                          
@@ -82,7 +82,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Data lavagem</span>
+                            <span class="input-group-text">Data Lavagem</span>
                           </div>
                           <input type="date" required value='<fmt:formatDate pattern="yyyy-MM-dd" value="${obj.dataLavagem}"></fmt:formatDate>' name="txtDataLavagem" class="form-control">
                          

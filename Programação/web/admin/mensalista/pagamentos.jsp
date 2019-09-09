@@ -40,7 +40,7 @@
                                 <tr>
 
 
-                                    <th>Dia/Mês pago</th>
+                                    <th>Período Estadia</th>
                                     <th>Data Pagamento</th>
                                     <th>Valor</th>
 

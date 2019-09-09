@@ -43,7 +43,7 @@
                       <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Placa carro</span>
+                            <span class="input-group-text">Placa Carro</span>
                           </div>
                           <input type="text" required value="${obj.placaCarro}" name="txtPlacaCarro" class="form-control">
                          
@@ -53,7 +53,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Dia início</span>
+                            <span class="input-group-text">Dia Início</span>
                           </div>
                           <input type="date" required value='<fmt:formatDate pattern="yyyy-MM-dd" value="${obj.diaInicio}"></fmt:formatDate>' name="txtDiaInicio" class="form-control">
                          
@@ -63,7 +63,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Hora início</span>
+                            <span class="input-group-text">Hora Início</span>
                           </div>
                           <input type="time" required value='<fmt:formatDate pattern="HH:mm" value="${obj.horaInicio}"></fmt:formatDate>' name="txtHoraInicio" class="form-control">
                          
@@ -83,7 +83,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Hora termino</span>
+                            <span class="input-group-text">Hora Termino</span>
                           </div>
                           <input type="time" required value='<fmt:formatDate pattern="HH:mm" value="${obj.horaTermino}"></fmt:formatDate>' name="txtHoraTermino" class="form-control">
                          

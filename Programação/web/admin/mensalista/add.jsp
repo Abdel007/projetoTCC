@@ -64,7 +64,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Valor mensal</span>
+                            <span class="input-group-text">Valor Mensal</span>
                           </div>
                           <input type="number"  name="txtValorMensal" required class="form-control">
                          
@@ -120,7 +120,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Cor carro</span>
+                            <span class="input-group-text">Cor Carro</span>
                           </div>
                           <input type="text"  name="txtCorCarro" required class="form-control">
                          
@@ -130,7 +130,7 @@
                           <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Placa carro</span>
+                            <span class="input-group-text">Placa Carro</span>
                           </div>
                           <input type="text"  name="txtPlacaCarro" required class="form-control">
                          

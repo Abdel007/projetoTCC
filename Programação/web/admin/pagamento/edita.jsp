@@ -49,7 +49,7 @@
                       <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-prepend">
-                            <span class="input-group-text">Mes/Anom pago</span>
+                            <span class="input-group-text">Período Estadia</span>
                           </div>
                           <input type="text" value="${obj.mesAno}" name="txtMesAno" required class="form-control">
                          
