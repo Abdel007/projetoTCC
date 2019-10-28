@@ -13,23 +13,27 @@
     </ol>
     <div class="container-fluid">
         <div class="row">
-           <div class="row">
-              <div class="col-lg-auto">
-                <div class="card">
-                  <div class="card-header">
-                    Cadastro
-                  </div>
-                  <div class="card-body">
-                    ${msg}
-                  </div>
+            <div class="row">
+                <div class="col-lg-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            Cadastro
+                        </div>
+                        <div class="card-body">
+                            ${msg}
+                        </div>
+                    </div>
                 </div>
-              </div>
-              
+
 
             </div>
 
-        <!--/.row-->
-    </div>
+            <!--/.row-->
+        </div>
+        <div class="form-group form-actions">
+            <a href="AdminWS" class="btn btn-sm btn-primary">Listar tabela</a>
+            <a href="add.jsp" class="btn btn-sm btn-primary">Cadastrar</a>
+        </div>
 </main>
 
 

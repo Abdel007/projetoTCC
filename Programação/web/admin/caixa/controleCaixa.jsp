@@ -26,7 +26,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Data 1 </span>
                                         </div>
-                                        <input type="date"  name="txtData1" required class="form-control">
+                                        <input onchange="trocadata(this.value)" type="date"  name="txtData1" required class="form-control">
 
                                     </div>
                                 </div>
@@ -35,7 +35,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">Data 2 </span>
                                         </div>
-                                        <input type="date"  name="txtData2" required class="form-control">
+                                        <input id="depois" disabled type="date"  name="txtData2" required class="form-control">
                                     </div>
                                 </div>
 
@@ -144,7 +144,14 @@
     </div>
 </div>
 </div>
-
+            <script>
+            
+            function trocadata(valor){
+                var depois = document.getElementById("depois");
+                depois.removeAttribute("disabled")
+                depois.setAttribute("min",valor);
+            }     
+            </script>
 
 </div>
 </div>

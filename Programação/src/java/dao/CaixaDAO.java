@@ -43,20 +43,40 @@ public class CaixaDAO extends GenericDAO<VwCaixa, Long> {
     }
 
     public Double listarSomaTipoEspecifico(String tipo, Date data1, Date data2) {
-        return Double.parseDouble(em.createNamedQuery("VwCaixa.findByTipoSoma")
-                .setParameter("tipo", tipo)
-                .setParameter("data1", data1, TemporalType.DATE)
-                .setParameter("data2", data2, TemporalType.DATE)
-                .getSingleResult().toString());
+
+        Double x;
+
+        try {
+            x = Double.parseDouble(em.createNamedQuery("VwCaixa.findByTipoSoma")
+                    .setParameter("tipo", tipo)
+                    .setParameter("data1", data1, TemporalType.DATE)
+                    .setParameter("data2", data2, TemporalType.DATE)
+                    .getSingleResult().toString());
+
+        } catch (Exception e) {
+            x = 0.0;
+        }
+
+        return x;
+
     }
-    
+
     public Double listarSomaTodosTipos(Date data1, Date data2) {
-        return Double.parseDouble(em.createNamedQuery("VwCaixa.findByTipoAllSoma")
-                .setParameter("data1", data1, TemporalType.DATE)
-                .setParameter("data2", data2, TemporalType.DATE)
-                .getSingleResult().toString());
+
+        Double x;
+
+        try {
+            x = Double.parseDouble(em.createNamedQuery("VwCaixa.findByTipoAllSoma")
+                    .setParameter("data1", data1, TemporalType.DATE)
+                    .setParameter("data2", data2, TemporalType.DATE)
+                    .getSingleResult().toString());
+        } catch (Exception e) {
+            x = 0.0;
+        }
+
+        return x;
     }
-    
+
 //    public List<VwCaixa> listarTodosTiposMes() {
 //        Calendar cal = Calendar.getInstance();
 //        String primeirodia,ultimodia;
@@ -68,7 +88,6 @@ public class CaixaDAO extends GenericDAO<VwCaixa, Long> {
 //        
 //        return this.listarTodosTipos(data1, data2);
 //    }
-
     public VwCaixa buscarPorChavePrimaria(Integer chaveprimaria) {
         return em.find(VwCaixa.class, chaveprimaria);
     }

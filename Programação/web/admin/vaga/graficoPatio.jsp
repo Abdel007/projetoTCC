@@ -12,14 +12,22 @@
 
     <div class="product-new-list-area">
         <div class="container-fluid">
+
+
+
             <div class="card-header">
                 <h4>Vagas sem cobertura</h4>
             </div>
+
+
+
             </br>
             <div class="row">
                 <c:forEach items="${vaga}" var="obj"> 
+                    
                     <c:if test="${obj.coberta==false}">
                         <div class="col-sm-6 col-md-2">
+                            <a href="VagaWS?acao=edit&id=${obj.id}">
                             <div class="card text-white
                                  <c:if test="${obj.ocupada==true}">bg-danger</c:if>
                                  <c:if test="${obj.ocupada==false}">bg-success</c:if>">
@@ -29,19 +37,26 @@
                                      <c:if test="${obj.ocupada==false}"><small class="text-muted text-uppercase font-weight-bold">Livre</small></c:if>
                                      </div>
                                  </div>
+                            </a>
                             </div>
                     </c:if>
                 </c:forEach>
             </div>
 
+
+
             <div class="card-header">
                 <h4>Vagas cobertas</h4>
             </div>
+
+
+
             </br>
             <div class="row">
                 <c:forEach items="${vaga}" var="obj">
                     <c:if test="${obj.coberta==true}">
                         <div class="col-sm-6 col-md-2">
+                            <a href="VagaWS?acao=edit&id=${obj.id}">
                             <div class="card text-white
                                  <c:if test="${obj.ocupada==true}">bg-danger</c:if>
                                  <c:if test="${obj.ocupada==false}">bg-success</c:if>">
@@ -51,10 +66,14 @@
                                      <c:if test="${obj.ocupada==false}"><small class="text-muted text-uppercase font-weight-bold">Livre</small></c:if>
                                      </div>
                                  </div>
+                                     </a>
                             </div>
                     </c:if>
                 </c:forEach>
             </div>
+
+
+
         </div>
     </div>
 </main>

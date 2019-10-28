@@ -60,6 +60,10 @@
                         </table>
 
                     </div>
+
+                </div>
+                <div class="form-group form-actions">
+                    <a href="MensalistaWS" class="btn btn-sm btn-primary">Voltar</a>
                 </div>
             </div>
             <!--/.col-->
@@ -69,6 +73,8 @@
 
         <!--/.row-->
     </div>
+
+
 
 </main>
 

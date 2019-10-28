@@ -6,28 +6,34 @@
         <li class="breadcrumb-item">
             <a href="TabelaPrecoWS">Listar</a>
         </li>
-        
+
 
     </ol>
     <div class="container-fluid">
         <div class="row">
-           <div class="row">
-              <div class="col-lg-auto">
-                <div class="card">
-                  <div class="card-header">
-                    Alteração
-                  </div>
-                  <div class="card-body">
-                    ${msg}
-                  </div>
+            <div class="row">
+                <div class="col-lg-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            Alteração
+                        </div>
+                        <div class="card-body">
+                            ${msg}
+                        </div>
+                    </div>
                 </div>
-              </div>
-              
+
 
             </div>
 
-        <!--/.row-->
-    </div>
+            <!--/.row-->
+        </div>
+
+        <div class="form-group form-actions">
+            <a href="TabelaPrecoWS" class="btn btn-sm btn-primary">Listar tabela</a>
+        </div>
+
+
 </main>
 
 
