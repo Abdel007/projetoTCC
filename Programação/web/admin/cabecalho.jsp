@@ -15,6 +15,8 @@
     <!-- Main styles for this application-->
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../vendors/css/pace.min.css" rel="stylesheet">
+    <link href="../../css/impressao.css" rel="stylesheet" type="text/css" media="print">
+        
   </head>
   <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
     <header class="app-header navbar">

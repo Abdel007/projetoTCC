@@ -21,4 +21,8 @@ public class LavagemDAO extends GenericDAO<Lavagem, Long>{
     public List<Lavagem> listar(String filtro){
         return em.createNamedQuery("Lavagem.findFilter").setParameter("filtro","%" + filtro.toUpperCase() + "%").getResultList();
     }
+    
+    public List<Lavagem> listar(Long filtro){
+        return em.createNamedQuery("Lavagem.findLavagem").setParameter("filtro", filtro ).getResultList();
+    }   
 }

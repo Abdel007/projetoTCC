@@ -24,7 +24,8 @@ import javax.persistence.Temporal;
 @NamedQueries({
     @NamedQuery(name = "LocacaoTempo.findAll", query = "SELECT lt FROM LocacaoTempo lt ORDER BY lt.diaInicio DESC"),
     @NamedQuery(name = "LocacaoTempo.findFilter", query = "select lt from LocacaoTempo lt" +
-            " where UPPER(lt.placaCarro) like :filtro")
+            " where UPPER(lt.placaCarro) like :filtro"),
+    @NamedQuery(name = "LocacaoTempo.findLocacaoTempo", query = "select lt from LocacaoTempo lt")
 })
 public class LocacaoTempo implements Serializable {
 

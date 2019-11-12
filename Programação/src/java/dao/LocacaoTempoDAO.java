@@ -21,4 +21,8 @@ public class LocacaoTempoDAO extends GenericDAO<LocacaoTempo, Long>{
     public List<LocacaoTempo> listar(String filtro){
         return em.createNamedQuery("LocacaoTempo.findFilter").setParameter("filtro","%" + filtro.toUpperCase() + "%").getResultList();
     }
+    
+    public List<LocacaoTempo> listar(Long filtro){
+        return em.createNamedQuery("Pagamento.findPagamento").setParameter("filtro", filtro ).getResultList();
+    }      
 }

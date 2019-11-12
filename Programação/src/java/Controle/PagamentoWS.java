@@ -7,16 +7,12 @@ package Controle;
 
 import Modelo.Mensalista;
 import Modelo.Pagamento;
-import Modelo.Pagamento;
-import Modelo.Pagamento;
 import dao.MensalistaDAO;
 import dao.PagamentoDAO;
-import dao.PagamentoDAO;
-import dao.PagamentoDAO;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Date;
 import java.util.List;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
@@ -48,10 +44,19 @@ public class PagamentoWS extends HttpServlet {
         String id;
         switch (String.valueOf(acao)) {
             
-//            case "levarPagamentos":
-//                request.setAttribute("pagamentos", this.listaPag());
-//                pagina = "controleCaixa.jsp";
-//                break;
+            case "imprimir":
+                if (request.getParameter("id") != null) {
+                    Long idLav = Long.parseLong(request.getParameter("id"));
+                    request.setAttribute("pagamento", this.buscaPagamento(idLav));
+                    request.setAttribute("msg", this.listarr(idLav));
+                    pagina = "compPagamentos.jsp";
+
+                } else {
+                    request.setAttribute("msg", "Identificador não informado");
+                }
+
+                pagina = "compPagamentos.jsp";
+                break;
             
             case "add":
                 request.setAttribute("mensalista", this.listaMensalista());
@@ -134,6 +139,22 @@ public class PagamentoWS extends HttpServlet {
         List<Mensalista> mensalistas = dao.listar();
         dao.fecharConexao();
         return mensalistas;
+    }
+    
+    private Pagamento buscaPagamento(Long id) {
+        PagamentoDAO dao = new PagamentoDAO();
+        Pagamento pagamento = dao.buscarPorChavePrimaria(id);
+        dao.fecharConexao();
+        return pagamento;
+    }
+    
+        private List<Pagamento> listarr(Long id) {
+        PagamentoDAO dao = new PagamentoDAO();
+        Pagamento pagamento = dao.buscarPorChavePrimaria(id);
+        dao.fecharConexao();
+        List<Pagamento> l = new ArrayList<Pagamento>();
+        l.add(pagamento);
+        return l;
     }
 
     

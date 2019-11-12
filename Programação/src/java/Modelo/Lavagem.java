@@ -27,7 +27,8 @@ import javax.persistence.Temporal;
     @NamedQuery(name = "Lavagem.findAll", query = "SELECT l FROM Lavagem l ORDER BY l.dataLavagem DESC"),
     @NamedQuery(name = "Lavagem.findFilter", query = "select l from Lavagem l" +
             " where UPPER(l.nome) like :filtro"),
-    @NamedQuery(name = "Lavagem.findByDataLavagem", query = "SELECT l FROM Lavagem l WHERE l.dataLavagem = false ORDER BY l.dataLavagem DESC")
+    @NamedQuery(name = "Lavagem.findByDataLavagem", query = "SELECT l FROM Lavagem l WHERE l.dataLavagem = false ORDER BY l.dataLavagem DESC"),
+    @NamedQuery(name = "Lavagem.findLavagem", query = "select l from Lavagem l")
 })
 public class Lavagem implements Serializable {
     

@@ -8,6 +8,7 @@ import dao.PagamentoDAO;
 import dao.VagaDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
@@ -18,6 +19,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.apache.catalina.tribes.util.Arrays;
 import util.FormataData;
 
 /**
@@ -59,6 +61,20 @@ public class LocacaoTempoWS extends HttpServlet {
                 } else {
                     request.setAttribute("msg", "Erro ao excluir");
                 }
+                break;
+                
+            case "imprimir":
+                if (request.getParameter("id") != null) {
+                    Long idLoc = Long.parseLong(request.getParameter("id"));
+                    request.setAttribute("locacaotempo", this.buscaLocacaoTempo(idLoc));
+                    request.setAttribute("msg", this.listarr(idLoc));
+                    pagina = "compLocacao.jsp";
+
+                } else {
+                    request.setAttribute("msg", "Identificador não informado");
+                }
+                
+                pagina = "compLocacao.jsp";
                 break;
 
             case "edit":
@@ -123,6 +139,22 @@ public class LocacaoTempoWS extends HttpServlet {
         List<Pagamento> pagamentos = dao.listar();
         dao.fecharConexao();
         return pagamentos;
+    }
+    
+     private LocacaoTempo buscaLocacaoTempo(Long id) {
+        LocacaoTempoDAO dao = new LocacaoTempoDAO();
+        LocacaoTempo locacaotempo = dao.buscarPorChavePrimaria(id);
+        dao.fecharConexao();
+        return locacaotempo;
+    }
+     
+     private List<LocacaoTempo> listarr(Long id) {
+        LocacaoTempoDAO dao = new LocacaoTempoDAO();
+        LocacaoTempo locacaotempo = dao.buscarPorChavePrimaria(id);
+        dao.fecharConexao();
+        List<LocacaoTempo> l = new ArrayList<LocacaoTempo>();
+        l.add(locacaotempo);
+        return l;
     }
 
     

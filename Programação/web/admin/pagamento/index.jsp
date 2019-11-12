@@ -60,6 +60,9 @@
                                             <a href="PagamentoWS?acao=del&id=${obj.id}" class="btn btn-pill btn-danger btn-sm" title="excluir"> 
                                                 <i class="fa fa-remove"></i>
                                             </a>
+                                            <a href="PagamentoWS?acao=imprimir&id=${obj.id}" class="icon-printer icons font-2xl d-block mt-4" title="imprimir"> 
+                                                
+                                            </a>
 
                                         </td>
                                     </tr>
